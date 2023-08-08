@@ -1,0 +1,8 @@
+A Tela inicial é a home.html
+
+Para rodar o código ligado ao BD foi utilizado o painel XAMPP com as extensões de PDO e pgsql. Será necessário ter todas essas no computador
+para executar juntamente com o BD.
+
+Deve mudar as váriaveis de conexão no código conectaBD.php . Deve mudar o nome de usuário, nome do banco de dados que será linkado e a senha do usuário.
+
+Após isso o programa rodará normalmente.

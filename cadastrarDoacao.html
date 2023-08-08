@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUSELON</title>
+    <link rel="stylesheet" href="./stylecadastrardoacao.css">
+</head>
+<body>
+    <a href="home.html"><button id="btn-voltar">Voltar</button></a>
+    <div class="form">
+        <form action="processaUser.php" method="post">
+            <fieldset>
+                <legend><b>Cadastro de Doação</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" id="name" name="name" class="inputUser" required>
+                    <label for="name"class="input">Nome do doador</label>
+                </div>
+                <br><br>
+                <div class="select" >
+                    <label>Tipo de Produto</label>
+                    <br>
+                    <br>
+                    <select name="select_produto" id="select_produto" class="selectUser" required> 
+                        <option>---Selecione uma opção---</option>
+                        <option>Carnes</option>
+                        <option>Doces</option>
+                        <option>Frutas</option>
+                        <option>Alimento</option>
+                        <option>Dinheiro</option>
+                        <option>Higiene</option>
+                        <option>Limpeza</option>
+                        <option>Medicamento</option>
+                    </select>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" id="produto" name="produto" class="inputUser" required>
+                    <label for="produto"class="input">Nome do produto</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type='number' id='quantidade' name='quantidade' class="inputUser" required>
+                    <label for="quantidade" class="input">Quantidade(UN)</label>
+                </div>
+                <br><br>
+            
+                <div class="tipo">
+                    <p>Tipo de Doador</p>
+                    <input type="radio" id="PJ" name="Pes" value="Pessoa Jurídica" required>
+                    <label for="Pjur">Pessoa Jurídica</label>
+                    <input type="radio" name="Pes" id="PF" value="Pessoa Física" required>
+                    <label for="Pfis">Pessoa Física</label>
+                </div>
+                <br><br>
+                <div>
+                    <br>
+                    <input type="submit" name="submit" id="submit" class="botao">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>
+
